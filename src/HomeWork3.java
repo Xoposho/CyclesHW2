@@ -5,14 +5,12 @@ public class HomeWork3 {
         int moveCometYear = 79;
         int yearNow = 2022;
         int yearEarlier = yearNow - 200;
-        int year = 0;
-
-        while (year <= yearNow) {
-            year += moveCometYear;
-            if (year >= yearEarlier && year <= yearNow) System.out.println("Комета появлялась в " + year + " году.");
-            else if (year > yearNow) System.out.println("Комета появится в " + year + " году.");
+        int yearFuture = yearNow + 100;
 
 
+        for (int year = 0; year <= yearFuture; year += moveCometYear) {
+            if (year >= yearEarlier)
+                System.out.println(year);
         }
 
         System.out.println("\nTask 2");
@@ -24,3 +22,4 @@ public class HomeWork3 {
         }
     }
 }
+//by Igor
