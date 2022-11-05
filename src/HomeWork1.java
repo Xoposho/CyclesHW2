@@ -6,7 +6,7 @@ public class HomeWork1 {
         int moneyPerMonth = 15000;
         int piggyBank = 0;
         int wantToSave = 2_459_000;
-        int monthToSave = 1;
+        int monthToSave = 0;
 
         while (piggyBank <= wantToSave) {
             piggyBank += moneyPerMonth;
@@ -29,12 +29,14 @@ public class HomeWork1 {
         System.out.print("\n");
         //Task 3
         int countryY = 12_000_000;
-        int deathInYear = (8 * countryY) / 1000;
-        int bornInYear = (17 * countryY) / 1000;
+        int deathInYear;
+        int bornInYear;
         int year = 2022;
         int yearEnd = year + 10;
 
         while (year <= yearEnd) {
+            deathInYear = (8 * countryY) / 1000;
+            bornInYear = (17 * countryY) / 1000;
             countryY -= deathInYear;
             countryY += bornInYear;
             System.out.println("Год " + year + ", численность населения составляет - " + countryY);
